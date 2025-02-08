@@ -1,0 +1,91 @@
+.divAll {
+    text-align: center;
+}
+
+/* Håller alla boxar i samma bredd*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnFact, #btnFacts, #btnColors {
+    width: auto;
+    height: 30px;
+    color:rgb(165, 42, 42);
+    border: 2px solid rgb(211, 82, 82);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btnFact, #btnFacts {
+    background-color: rgba(211, 82, 82, 0.267);
+}
+
+#btnColors{
+    background-color: rgb(255, 99, 71);
+}
+
+#btnFact:hover, #btnFacts:hover {
+    background-color: rgb(238, 150, 150); /* Bakgrundsfärg vid hover */
+}
+
+#btnFact:active, #btnFacts:active {
+    background-color: rgb(196, 97, 97); /* Bakgrundsfärg vid hover */
+}
+
+#purrfect, #catfacts {
+    padding: 5px;
+}
+
+#purrfect {
+    color:rgb(211, 82, 82);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#catfacts {
+    color:#a52a2a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+/* Gemensamma regler för #fact och #facts */
+#fact, #facts {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid rgb(211, 82, 82);
+    max-width: 450px; /* Samma bredd för båda */
+    margin: 30px auto 0; /* Centrerar och lägger toppmarginal */
+    padding: 10px;
+    font-size: 18px;
+    visibility: hidden;
+}
+
+#fact {
+    font-weight: 100;
+    color:rgb(165, 42, 42);
+    background-color: rgba(211, 82, 82, 0.267);
+}
+
+/* Specifika regler för listan */
+#facts {
+    list-style: none; /* Tar bort punkterna */
+    padding: 0;       /* Tar bort inre marginal */
+    text-align: center; /* Valfritt: justera texten till vänster */
+}
+
+#facts li {
+    padding: 10px;
+    margin: 0px 0; /* Lägger till lite mellanrum mellan listobjekten */
+    background-color: rgba(211, 82, 82, 0.267); /* Samma bakgrundsfärg som för #fact */
+}
+
+footer {
+    color:rgb(165, 42, 42);
+}
